@@ -1,13 +1,13 @@
 let left=document.querySelector('.left');
 let right=document.querySelector('.right');
-let leftRight=document.querySelector('.leftorRight');
+let ghostSchool=document.querySelector('.ghostSchool');
 let hauntedSchool=document.querySelector('.hauntedSchool');
 let text=document.querySelector('p');
 hauntedSchool.style.display="none";
 
 left.addEventListener('click',function(){
 
-    leftRight.style.display="none";
+    ghostSchool.style.display="none";
     left.style.display="none";
     right.style.display="none";
     hauntedSchool.style.display="block";
