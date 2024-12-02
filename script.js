@@ -9,6 +9,8 @@ darkHallway.style.display="none";
 let school=document.querySelector('.school')
 let exit=document.querySelector('.exit');
 exit.style.display="none";
+let hauntedClassroom=document.querySelector('.hauntedClassroom')
+hauntedClassroom.sty;exit.display="none";
 //left button 
 left.addEventListener('click',function(){
 
@@ -34,4 +36,10 @@ school.addEventListener('mouseenter',function(){
 darkHallway.style.display="none"
 text.innerHTML="You have safely exited the school!";
 exit.style.display="block";
+});
+
+//right button
+right.addEventListener('click',function(){
+hauntedClassroom.style.display="block";
+
 });
