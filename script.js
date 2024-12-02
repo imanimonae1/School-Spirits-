@@ -22,20 +22,21 @@ left.addEventListener('click',function(){
     ghostSchool.style.display="none";
     left.style.display="none";
     right.style.display="none";
-    hauntedSchool.style.display="block";
+    hauntedSchool.style.display="none";
     hauntedClassroom.style.display="none";
     schoolLunchroom.style.display="none";
     pumpkin.style.display="none";
+    darkHallway.style.display="block";
+   
 
-    text.innerHTML="You are trapped in an old school filled with a bunch of school spirits. How will you find your way out? Will you make it out alive or will you become one of the school spirits? Double click to enter.";
+    text.innerHTML="You are trapped in an old school filled with a bunch of school spirits. How will you find your way out? Will you make it out alive or will you become one of the school spirits? Double click to enter. Or hover over the school emoji to go down a different path.";
 });
 //double click 
-hauntedSchool.addEventListener('dblclick',function(){
-    text.innerHTML="Let's play";
+darkHallway.addEventListener('dblclick',function(){
     hauntedSchool.style.display="none";
     darkHallway.style.display="block";
     hauntedClassroom.style.display="none";
-    text.innerHTML="Go down the dark school hallway and try to find your way out. Find the school emoji to find your way out. ";
+    text.innerHTML="You go down the dark hallway and exit out alive!";
     schoolLunchroom.style.display="none";
     school.style.display="block";
     });
@@ -44,8 +45,9 @@ hauntedSchool.addEventListener('dblclick',function(){
 school.addEventListener('mouseenter',function(){
 darkHallway.style.display="none"
 text.innerHTML="You have safely exited the school!";
-exit.style.display="block";
+exit.style.display="none";
 hauntedClassroom.style.display="none";
+schoolLunchroom.style.display="block";
 });
 
 //right button
