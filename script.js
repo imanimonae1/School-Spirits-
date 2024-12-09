@@ -34,19 +34,21 @@ left.addEventListener('click',function(){
     school.style.display="block";
     niceSpirit.style.display="none";
    evilSpirit.style.display="none";
+   exit.style.display="none";
     text.innerHTML="You are trapped in an old school filled with a bunch of school spirits. How will you find your way out? Will you make it out alive or will you become one of the school spirits? Double click to enter. Or hover over the school emoji to go down a different path.";
 });
 
 //double click 
 darkHallway.addEventListener('dblclick',function(){
     hauntedSchool.style.display="none";
-    darkHallway.style.display="block";
+    darkHallway.style.display="none";
     hauntedClassroom.style.display="none";
     text.innerHTML="You go down the dark hallway and exit out alive!";
     schoolLunchroom.style.display="none";
     school.style.display="none";
     niceSpirit.style.display="none";
     evilSpirit.style.display="none";
+    exit.style.display="block";
     });
 
 //mouse eneter event
@@ -82,6 +84,7 @@ hauntedClassroom.style.display="none";
 text.innerHTML=" You never find your way out!";
 niceSpirit.style.display="none";
 evilSpirit.style.display="block";
+
 text.innerHTML="You end up going with an evil spirit and you get tricked. You end up trapped in the school and become one of the spirits."
 });
 
